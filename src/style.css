@@ -7,4 +7,35 @@
 
 .header > div {
     display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+.header > h2 {
+    padding: 0;
+    margin: 0;
+}
+.header > div > a {
+    padding-bottom: 8px;
+}
+
+.body {
+    border-radius: 3%;
+    background-color: bisque;
+    height: 80vh;
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.body > div {
+    background-color: beige;
+}
+.hours > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
