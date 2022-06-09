@@ -1,41 +1,68 @@
 .header { 
     display: flex;
-    background-color: lightblue;
-    width: 100%;
+    background-color: rgb(236, 236, 183);
     justify-content: space-between;
+    
+    grid-column: 1/4;
 }
-
-.header > div {
-    display: flex;
-    align-items: flex-end;
-    gap: 15px;
+.content {
+    display: grid;
+    gap: 6%;
+    grid-template-columns: 14vw 60vw 12vw ;
+    grid-template-rows: 10vh minmax(1fr, 80vh) 15vh;
 }
-.header > h2 {
+img {
+    height: 10vh;
+    width: 10vw;
     padding: 0;
     margin: 0;
 }
+.header > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
 .header > div > a {
     padding-bottom: 8px;
 }
 
 .body {
+    padding: 2%;
+    grid-column: 2/3;
     border-radius: 3%;
+    overflow: auto;
     background-color: bisque;
-    height: 80vh;
-    width: 70vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 8%;
+    /* overflow: scroll; */
+    gap: 15%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     
 }
 
 .body > div {
     background-color: beige;
+    padding: 1%;
+    border-radius: 3%;
+    width: 50%;
 }
 .hours > ul {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+.footer{
+    margin-top: 3%;
+    grid-column: 1/4;
+
+    background-color: rgb(236, 236, 183);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
